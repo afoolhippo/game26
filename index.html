@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>カメカメライフ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- タイトル -->
+<div id="titleScreen" class="screen">
+
+  <img src="title.png" id="titleImage">
+
+  <div id="ruleText">
+    のんびり さんぽしよう。<br>
+    あんぜんな ときに やすもう。
+  </div>
+
+  <button id="startBtn">
+    タップしてスタート
+  </button>
+
+</div>
+
+<!-- ゲーム -->
+<div id="gameScreen" class="screen hidden">
+
+  <button id="titleBackBtn">
+    タイトルへ戻る
+  </button>
+
+  <div id="topUI">
+
+    <div id="timeWrap">
+      残り時間
+      <span id="timeText">60</span>
+    </div>
+
+    <div id="dokidokiWrap">
+
+      <div>
+        ドキドキ
+      </div>
+
+      <div id="dokidokiMeter">
+        ░░░░░░░░░░ 0%
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="gameArea">
+
+    <div id="bg1" class="bg"></div>
+    <div id="bg2" class="bg"></div>
+
+    <div class="emoji" id="dog">🐕‍🦺</div>
+    <div class="emoji" id="bike">🚴</div>
+    <div class="emoji" id="clover">🍀</div>
+    <div class="emoji" id="cat">🐈️</div>
+
+    <div id="eventText"></div>
+
+    <canvas id="gameCanvas" width="320" height="240"></canvas>
+
+  </div>
+
+  <div id="buttonArea">
+
+    <button id="restBtn">
+      やすむ
+    </button>
+
+    <button id="shellBtn">
+      こうら
+    </button>
+
+  </div>
+
+</div>
+
+<!-- 結果 -->
+<div id="resultScreen" class="screen hidden">
+
+  <h1>さんぽけっか</h1>
+
+  <canvas id="resultCanvas" width="96" height="96"></canvas>
+
+  <div id="resultRank"></div>
+
+  <div id="resultComment"></div>
+
+  <button id="shareBtn">
+    Xでシェア
+  </button>
+
+  <button id="retryBtn">
+    もう1回遊ぶ
+  </button>
+
+  <button id="homeBtn">
+    カバゲーセンへ
+  </button>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>

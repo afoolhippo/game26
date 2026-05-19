@@ -1,0 +1,208 @@
+body{
+  margin:0;
+  overflow:hidden;
+  background:#bfe3ea;
+  font-family:'DotGothic16',sans-serif;
+  color:#203030;
+}
+
+.screen{
+  width:100vw;
+  height:100vh;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:12px;
+}
+
+.hidden{
+  display:none;
+}
+
+#titleImage{
+  width:92%;
+  max-width:420px;
+  margin-top:10px;
+  image-rendering:pixelated;
+}
+
+#ruleText{
+  margin-top:18px;
+  line-height:1.9;
+  text-align:center;
+  font-size:14px;
+}
+
+button{
+  font-family:'DotGothic16',sans-serif;
+}
+
+#startBtn,
+#shareBtn,
+#retryBtn,
+#homeBtn{
+  width:82%;
+  max-width:320px;
+  padding:14px;
+  margin-top:12px;
+  font-size:18px;
+  background:#537f61;
+  color:white;
+  border:none;
+  border-bottom:4px solid #34503d;
+}
+
+#titleBackBtn{
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:20;
+
+  width:auto;
+  padding:8px 10px;
+
+  font-size:11px;
+
+  background:#537f61;
+  color:white;
+  border:none;
+  border-bottom:3px solid #34503d;
+}
+
+#topUI{
+  width:320px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+
+  margin-top:38px;
+
+  font-size:13px;
+}
+
+#dokidokiWrap{
+  text-align:right;
+}
+
+#dokidokiMeter{
+  margin-top:4px;
+  font-size:14px;
+}
+
+#gameArea{
+  position:relative;
+  width:320px;
+  height:240px;
+  overflow:hidden;
+
+  margin-top:10px;
+
+  border:4px solid #304830;
+  background:#a7d88d;
+}
+
+.bg{
+  position:absolute;
+  top:0;
+  width:320px;
+  height:240px;
+
+  background:
+  repeating-linear-gradient(
+    to right,
+    #98cd78 0px,
+    #98cd78 32px,
+    #90c56f 32px,
+    #90c56f 64px
+  );
+}
+
+#bg2{
+  left:320px;
+}
+
+canvas{
+  position:absolute;
+  left:0;
+  top:0;
+  image-rendering:pixelated;
+}
+
+.emoji{
+  position:absolute;
+  z-index:5;
+  font-size:28px;
+}
+
+#dog{
+  left:650px;
+  top:170px;
+}
+
+#bike{
+  left:1000px;
+  top:145px;
+}
+
+#clover{
+  left:550px;
+  top:185px;
+}
+
+#cat{
+  left:1300px;
+  top:178px;
+}
+
+#eventText{
+  position:absolute;
+  width:100%;
+  text-align:center;
+  top:28px;
+  z-index:10;
+  font-size:18px;
+}
+
+#buttonArea{
+  width:320px;
+  display:flex;
+  gap:10px;
+}
+
+#buttonArea button{
+  flex:1;
+
+  padding:14px;
+
+  font-size:18px;
+
+  background:#537f61;
+  color:white;
+
+  border:none;
+  border-bottom:4px solid #34503d;
+}
+
+h1{
+  margin-top:30px;
+}
+
+#resultCanvas{
+  position:static;
+  margin-top:12px;
+  width:96px;
+  height:96px;
+  image-rendering:pixelated;
+}
+
+#resultRank{
+  margin-top:10px;
+  font-size:28px;
+}
+
+#resultComment{
+  margin-top:12px;
+  text-align:center;
+  line-height:1.8;
+}
