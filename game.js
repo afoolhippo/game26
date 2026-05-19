@@ -504,13 +504,15 @@ function endGame(){
 // ===== シェア =====
 shareBtn.onclick = ()=>{
 
-  const text =
+const text =
 `のんびり さんぽしました 🐢
 
 ドキドキ ${Math.floor(dokidoki)}%
 
 無料ブラウザゲーム
 「カメカメライフ」
+
+https://afoolhippo.github.io/game26/
 
 #カメカメライフ
 #カバゲーセン`;
